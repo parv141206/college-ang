@@ -1,0 +1,63 @@
+<header>
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input title="search" class="form-control me-2" [(ngModel)]="searchText" name="searchText" (input)="handleChange($event)">
+          <button class="btn" type="submit" [disabled]="searchText.length == 0">Search</button>
+        </form>
+      </div>
+    </div>
+ </nav>
+</header>
+<main>
+ <div class="container m-3">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab impedit aliquid iste sapiente recusandae cumque cupiditate atque dignissimos amet quibusdam, vitae voluptate officiis quisquam, reiciendis corporis mollitia tempore non delectus eveniet. Earum cumque repudiandae assumenda commodi in ratione, doloremque consequatur minima nostrum enim aspernatur deserunt quo pariatur iure consequuntur modi fuga, harum id. In eveniet nisi architecto, eligendi veritatis repellat molestias facilis nam. Id consequatur mollitia ratione quis debitis eius perspiciatis tenetur aperiam. Laboriosam rem minima iure accusamus, officiis odio amet eveniet deserunt error eos doloremque delectus nobis!
+ </div>
+ <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="card text-center">
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Body</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card text-center">
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Body</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+</main>
